@@ -1,7 +1,7 @@
 {
-  "name": "react-avatar",
-  "version": "1.0.0",
-  "description": "react-avatar React component",
+  "name": "@crpt/react-avatar",
+  "version": "0.0.1",
+  "description": "React avatar component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -18,7 +18,9 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "styled-components": "1.4.6 - 3"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
@@ -28,9 +30,9 @@
     "react-dom": "^16.4.0"
   },
   "author": "",
-  "homepage": "",
+  "homepage": "https://github.com/crptteam/react-avatar",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/crptteam/react-avatar",
   "keywords": [
     "react-component"
   ]
