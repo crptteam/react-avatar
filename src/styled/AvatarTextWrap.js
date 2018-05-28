@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { getThemeAsPlainTextByKeys } from '@crpt/utils';
+import { getThemeAsPlainTextByKeys } from '../utils';
 import defaultTheme from '../theme/defaultTheme';
 
 const Elem = styled.div`

@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar Should renders without problems 1`] = `
+<AvatarWrap
+  color="light"
+  round={true}
+  size="small"
+  theme={
+    Object {
+      "dark": Object {
+        "background": "#212C42",
+        "color": "#FFFFFF",
+      },
+      "fontWeight": 400,
+      "large": Object {
+        "fontSize": "32px",
+        "height": "128px",
+        "width": "128px",
+      },
+      "light": Object {
+        "background": "#FFFFFF",
+        "color": "#212C42",
+      },
+      "small": Object {
+        "fontSize": "14px",
+        "height": "34px",
+        "width": "34px",
+      },
+    }
+  }
+>
+  <AvatarTextWrap
+    color="light"
+    size="small"
+    theme={
+      Object {
+        "dark": Object {
+          "background": "#212C42",
+          "color": "#FFFFFF",
+        },
+        "fontWeight": 400,
+        "large": Object {
+          "fontSize": "32px",
+          "height": "128px",
+          "width": "128px",
+        },
+        "light": Object {
+          "background": "#FFFFFF",
+          "color": "#212C42",
+        },
+        "small": Object {
+          "fontSize": "14px",
+          "height": "34px",
+          "width": "34px",
+        },
+      }
+    }
+  >
+    ES
+  </AvatarTextWrap>
+</AvatarWrap>
+`;

@@ -39,14 +39,16 @@ Avatar.propTypes = {
   round: PropTypes.bool,
   size: PropTypes.oneOf(Object.keys(SIZES)),
   color: PropTypes.oneOf(Object.keys(COLORS)),
-  theme: PropTypes.object
+  theme: PropTypes.object,
+  abbr: PropTypes.string,
+  src: PropTypes.string,
 };
 
 Avatar.defaultProps = {
   round: false,
   size: SIZES.small,
   color: COLORS.light,
-  theme: defaultTheme
+  theme: defaultTheme,
 };
 
 Avatar.displayName = ComponentName;
