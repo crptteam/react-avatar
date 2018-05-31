@@ -6,6 +6,7 @@ node_js:
 
 before_install:
   - npm install codecov.io coveralls
+  - npm i -g makeshift && makeshift -s @crpt -r registry.npmjs.org
 
 after_success:
   - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
@@ -14,3 +15,11 @@ after_success:
 branches:
   only:
     - master
+
+deploy:
+  provider: npm
+  email: nikitosgroover@gmail.com
+  api_key: $NPM_TOKEN
+  tag: next
+  on:
+    repo: crptteam/react-avatar
