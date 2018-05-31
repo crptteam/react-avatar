@@ -4,12 +4,12 @@
   "description": "React avatar component",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": ["css", "es", "lib", "umd"],
+  "files": ["css", "es", "lib", "umd", "src"],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "nwb build-react-component",
+    "build": "nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
     "start": "nwb serve-react-demo",
     "test": "NODE_ENV=test jest",
