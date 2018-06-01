@@ -1,11 +1,12 @@
 module.exports = {
-  type: 'react-component',
+  type: "react-component",
   npm: {
     esModules: true,
     umd: false
   },
   babel: {
-    "plugins": [
+    presets: ["env", "react"],
+    plugins: [
       "transform-class-properties",
       "transform-es2015-destructuring",
       "transform-object-rest-spread",
@@ -14,14 +15,22 @@ module.exports = {
       [
         "styled-components",
         {
-          "ssr": false,
-          "minify": false,
-          "displayName": true,
-          "preprocess": false,
-          "transpileTemplateLiterals": false
+          ssr: false,
+          minify: false,
+          displayName: true,
+          preprocess: false,
+          transpileTemplateLiterals: false
         }
       ],
       "inline-react-svg"
-    ]
+    ],
+    env: {
+      production: {
+        plugins: ["transform-es2015-modules-commonjs", "inline-react-svg"]
+      },
+      test: {
+        plugins: ["transform-es2015-modules-commonjs", "inline-react-svg"]
+      }
+    }
   }
-}
+};
