@@ -5,7 +5,7 @@ module.exports = {
     umd: false
   },
   babel: {
-    presets: ["env", "react"],
+    presets: [["env", {"modules": "umd"}], "react"],
     plugins: [
       "transform-class-properties",
       "transform-es2015-destructuring",
