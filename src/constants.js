@@ -1,6 +1,7 @@
 export const SIZES = {
   small: 'small',
-  large: 'large'
+  large: 'large',
+  medium: 'medium'
 };
 
 export const COLORS = {
