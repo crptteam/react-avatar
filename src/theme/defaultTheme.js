@@ -9,6 +9,11 @@ export default {
     width: '128px',
     fontSize: '32px',
   },
+  medium: {
+    height: '64px',
+    width: '64px',
+    fontSize: '20px',
+  },
   light: {
     background: '#FFFFFF',
     color: '#212C42'
