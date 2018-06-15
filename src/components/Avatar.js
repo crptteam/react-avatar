@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { defaultTheme } from '../theme/';
+import React from "react";
+import PropTypes from "prop-types";
+import { defaultTheme } from "../theme/";
+import { withTheme } from "styled-components";
 
-const ComponentName = 'Avatar';
+const ComponentName = "Avatar";
 
-import { SIZES, COLORS } from '../constants';
+import { SIZES, COLORS } from "../constants";
 
-import AvatarWrap from '../styled/AvatarWrap';
-import AvatarTextWrap from '../styled/AvatarTextWrap';
-import InnerImg from '../styled/InnerImg';
-
+import AvatarWrap from "../styled/AvatarWrap";
+import AvatarTextWrap from "../styled/AvatarTextWrap";
+import InnerImg from "../styled/InnerImg";
 
 class Avatar extends React.Component {
   render() {
@@ -41,16 +41,16 @@ Avatar.propTypes = {
   color: PropTypes.oneOf(Object.keys(COLORS)),
   theme: PropTypes.object,
   abbr: PropTypes.string,
-  src: PropTypes.string,
+  src: PropTypes.string
 };
 
 Avatar.defaultProps = {
   round: false,
   size: SIZES.small,
   color: COLORS.light,
-  theme: defaultTheme,
+  theme: defaultTheme
 };
 
 Avatar.displayName = ComponentName;
 
-export default Avatar;
+export default withTheme(Avatar);
