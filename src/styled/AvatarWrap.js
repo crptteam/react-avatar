@@ -15,8 +15,14 @@ const Elem = styled.div`
 
 const AvatarWrap = props => {
 
+  const merged = Object.assign(
+    {},
+    defaultTheme.Avatar,
+    props.theme && props.theme.Avatar ? props.theme.Avatar : {}
+  );
+
   const theme = getThemeAsPlainTextByKeys(
-    props.theme || defaultTheme,
+    merged,
     props.color,
     props.size
   );
