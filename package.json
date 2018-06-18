@@ -1,6 +1,6 @@
 {
   "name": "@crpt/react-avatar",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "React avatar component",
   "main": "lib/index.js",
   "module": "es/index.js",
