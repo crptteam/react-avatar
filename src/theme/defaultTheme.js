@@ -15,6 +15,11 @@ export default {
       width: "64px",
       fontSize: "20px"
     },
+    smallPlus: {
+      height: "46px",
+      width: "46px",
+      fontSize: "18px"
+    },
     light: {
       background: "#FFFFFF",
       color: "#212C42"
@@ -22,6 +27,10 @@ export default {
     dark: {
       background: "#212C42",
       color: "#FFFFFF"
+    },
+    yellow: {
+      background: "#F8EC31",
+      color: "#52535A"
     },
     fontWeight: 400
   }
